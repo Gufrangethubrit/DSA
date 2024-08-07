@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing Element In Array</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter index for Check element" id="ele">
+    <button onclick="Traversing()">Check Element</button>
+    <script>
+        let arr = [25,35,46,98,76,45,12];
+        function Traversing(){
+            
+            let ele = document.getElementById("ele").value;
+
+            if(ele<arr.length && typeof parseInt(ele) ==="number"){
+                alert(arr[ele]);
+            }
+            else{
+                alert("please enter valid number")
+            }
+        }
+    </script>
+    
+</body>
+</html>

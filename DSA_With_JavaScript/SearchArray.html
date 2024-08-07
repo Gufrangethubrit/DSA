@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search element from array</title>
+</head>
+<body>
+ 
+    <input type="text" placeholder="Enter Element for Search" id="element">
+    <button onclick="Search()">Search Element</button>
+    <script>
+        
+        function Search(){
+            let arr = [20,40,60,42,36,98,35];
+            let ele = document.getElementById("element").value;
+            let index = 0;
+            for(let i = 0 ; i<arr.length ; i++){
+                if(arr[i]===parseInt(ele)){
+                    index = i;
+                   document.write(`Index = ${index} then Element = ${arr[index]}`)
+                    break;
+                }
+                
+            }
+            
+            
+            }
+            
+    </script>
+</body>
+</html>
